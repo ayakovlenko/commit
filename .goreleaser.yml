@@ -5,9 +5,13 @@ before:
   hooks:
     - go mod download
 builds:
-  - goos:
-      - darwin
-      - linux
-    goarch:
-      - amd64
-      - arm64
+  main: ./cmd/commit
+  goos:
+    - darwin
+    - linux
+  goarch:
+    - amd64
+    - arm64
+  goarm:
+    - 6
+    - 7
