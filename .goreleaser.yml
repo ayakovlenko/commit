@@ -1,2 +1,3 @@
 project_name: commit
-builds: []
+builds:
+  - main: ./cmd/commit
