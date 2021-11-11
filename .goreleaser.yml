@@ -1,17 +1,2 @@
 project_name: commit
-env:
-  - GO111MODULE=on
-before:
-  hooks:
-    - go mod download
-builds:
-  - main: ./cmd/commit
-    goos:
-      - darwin
-      - linux
-    goarch:
-      - amd64
-      - arm64
-    goarm:
-      - 6
-      - 7
+builds: []
